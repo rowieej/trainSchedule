@@ -2,12 +2,16 @@
 <html>
 <head>
 	<title>Employee Data Management</title>
-	<link rel="stylesheet" type="text/css" href="train.css">
-	
+		<title>Employee Data Management</title>
+	<!--Add link to own css file-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!--Add bootstrap stylesheet-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
+	<!--Add jquery library-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
+	<!--Add moment library -->
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<!--add firebase cdn-->
 	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 
 
@@ -63,15 +67,15 @@
 				  </div>
 				  <div class="form-group">
 				    <label for="destination">Destination</label>
-				    <input type="text" class="form-control" id="tDestination" placeholder="Enter your destination">
+				    <input type="text" class="form-control" id="destination" placeholder="Enter your destination">
 				  </div>
 				   <div class="form-group">
 				    <label for="time">First Train Time (HH:mm - military time)</label>
-				    <input type="time" class="form-control" id="eStartDate" placeholder="">
+				    <input type="time" class="form-control" id="trainTime" placeholder="">
 				  </div>
 				   <div class="form-group">
 				    <label for="frequency">Frequency (min)</label>
-				    <input type="text" class="form-control" id="eRate" placeholder="minutes">
+				    <input type="text" class="form-control" id="frequency" placeholder="minutes">
 				  </div>
 
 
@@ -85,6 +89,6 @@
 </div>
 
 </div>
-<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
