@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Data Management</title>
+	<link rel="stylesheet" type="text/css" href="train.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
+
+	<!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script-->
+	
+
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="jumbotron">
+	  <h1>Anytime is Train Time</h1>
+	  <p>Chugga Chugga, Chugga Chugga! Choo Choo!</p>
+	</div>
+
+	<div class="panel panel-default">
+  <!-- Default panel contents -->
+	  <div class="panel-heading panel-primary">Current Train Schedule</div>
+	  <div class="panel-body">
+   
+
+  <!-- Table -->
+		  <table class="table">
+		    <thead>
+		    	<tr>
+		    		<th>Train Name</th>
+		    		<th>Destination</th>
+		    		<th>Frequency (min)</th>
+		    		<th>Next Arrival</th>
+		    		<th>Minutes Away</th>
+					</tr>
+				</thead>
+
+				<tbody>
+				</tbody>
+			</table>
+ 		</div>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+	  <div class="panel-heading panel-primary">Add Train</div>
+	  <div class="panel-body">
+   
+
+  <!-- FORM -->
+		  	<form>
+				  <div class="form-group">
+				    <label for="trainName">Train Name</label>
+				    <input type="text" class="form-control" id="train" placeholder="Train name">
+				  </div>
+				  <div class="form-group">
+				    <label for="destination">Destination</label>
+				    <input type="text" class="form-control" id="tDestination" placeholder="Enter your destination">
+				  </div>
+				   <div class="form-group">
+				    <label for="time">First Train Time (HH:mm - military time)</label>
+				    <input type="time" class="form-control" id="eStartDate" placeholder="">
+				  </div>
+				   <div class="form-group">
+				    <label for="frequency">Frequency (min)</label>
+				    <input type="text" class="form-control" id="eRate" placeholder="minutes">
+				  </div>
+
+
+
+				
+				  <button type="submit" class="btn btn-default" id="submitMe">Submit</button>
+				</form>
+
+		 
+ </div>
+</div>
+
+</div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

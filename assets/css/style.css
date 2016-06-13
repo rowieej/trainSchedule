@@ -1,0 +1,18 @@
+.jumbotron{ 
+	text-align: center;
+	background-color:transparent !important;
+	background-color: #c8b03e !important;
+}
+
+.container{
+	margin: 20px 10px 20px 10px;
+}
+
+.panel-heading{
+	background-color: #c8b03e !important;
+}
+
+.btn{
+	background-color: #c8b03e !important;
+
+}
