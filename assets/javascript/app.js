@@ -56,10 +56,11 @@ trainData.on("child_added", function(childSnapshot, prevChildKey){
 		console.log(frequency);
 
 		//make sure user "time" input is in military time
-		diffTime = moment() 
+		diffTime = moment(time, 'h:mm a').format('H:mm');
+		console.log(diffTime);
 
 		//take the user "time" input and add the user "fequency" in minutes to get time of next arriving train
-		var nextTrain = moment
+		var  = moment
 })
 
 });
