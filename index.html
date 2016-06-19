@@ -22,20 +22,23 @@
 <body>
 
 <div class="container">
-
+<!--jumbotron-->
 	<div class="jumbotron">
 	  <h1>Anytime is Train Time</h1>
 	  <p>Chugga Chugga, Chugga Chugga! Choo Choo!</p>
 	</div>
 
-	<div class="panel panel-default">
-  <!-- Default panel contents -->
-	  <div class="panel-heading panel-primary">Current Train Schedule</div>
-	  <div class="panel-body">
-   
+	<div class="row">
+		<div class="col-lg-12">
 
-  <!-- Table -->
-		  <table class="table">
+<!-- Default panel contents -->
+	<div class="panel panel-default">
+		<div class="panel-heading panel-primary">Current Train Schedule</div>
+	  
+
+<!-- Table -->
+		<div class="panel-body">
+		  <table class="table" id='tTable'>
 		    <thead>
 		    	<tr>
 		    		<th>Train Name</th>
@@ -52,13 +55,12 @@
  		</div>
 </div>
 
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-	  <div class="panel-heading panel-primary">Add Train</div>
+<!-- Default panel contents -->
+	<div class="panel-heading panel-primary">Add Train</div>
 	  <div class="panel-body">
    
 
-  <!-- FORM -->
+  <!-- input form -->
 		  	<form>
 				  <div class="form-group">
 				    <label for="trainName">Train Name</label>

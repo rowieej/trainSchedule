@@ -56,11 +56,29 @@ trainData.on("child_added", function(childSnapshot, prevChildKey){
 		console.log(frequency);
 
 		//make sure user "time" input is in military time
-		diffTime = moment(time, 'h:mm a').format('H:mm');
-		console.log(diffTime);
+		var militaryTime = moment(time, 'h:mm a').format('H:mm');
+		console.log(militaryTime);
 
-		//take the user "time" input and add the user "fequency" in minutes to get time of next arriving train
-		var  = moment
+		//calculate amount of minutes until arrival and arrival time
+				//starting at "first train time"
+
+		//changes hours into minutes
+		var diffTime = moment().unix(militaryTime, "minutes");
+		//figure out how many times the frequency goes into that amount of minutes
+		var timeRemainder = diffTime % frequency;
+		var minutes = frequency - timeRemainder;
+
+		console.log(diffTime);
+		console.log(timeRemainder);
+		console.log(minutes);
+
+		//calculate next arrival time
+		var nextArrival = moment().add(minutes, "m").format("hh:mm A");
+		console.log(nextArrival);
+
+		//add to the table
+		$("#tTable > tbody").append("<tr><td>" + train + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + nextArrival + "</td><td>" + minutes + "</td></tr>");
+
 })
 
 });
